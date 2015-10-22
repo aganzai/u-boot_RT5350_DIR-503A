@@ -76,8 +76,8 @@ CONFIG_XZ = OFF
 
 # clean the slate ...
 PLATFORM_RELFLAGS =
-PLATFORM_CPPFLAGS =
-PLATFORM_LDFLAGS =
+PLATFORM_CPPFLAGS = -mabicalls -fpic
+PLATFORM_LDFLAGS  = -shared    -fpic
 
 #
 # When cross-compiling on NetBSD, we have to define __PPC__ or else we
